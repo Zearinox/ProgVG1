@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float runSpeed = 7;
@@ -23,10 +23,14 @@ public class PlayerController : MonoBehaviour
 
     public int maxHealth = 10;
     public int currentHealth;
+    
+    public int score = 0;
+    public Text scoreText;
 
     private void Start()
     {
         currentHealth = maxHealth;
+        UpdateScoreUI();
     }
 
     void Update()
@@ -122,5 +126,19 @@ public class PlayerController : MonoBehaviour
     private void Die()
     {
         animator.Play("Die");
+    }
+    public void AddScore(int points)
+    {
+        score += points;
+        UpdateScoreUI();
+    }
+
+    // Método para actualizar la UI del puntaje
+    private void UpdateScoreUI()
+    {
+        if (scoreText != null)
+        {
+            scoreText.text = "Score: " + score;
+        }
     }
 }
