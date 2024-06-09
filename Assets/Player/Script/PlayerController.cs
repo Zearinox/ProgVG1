@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,13 +10,11 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
 
     private float x, y;
-    private float turnSmoothVelocity;
-    private bool isLockedOn = false;
-    private Transform lockOnTarget;
 
     public Rigidbody rb;
     public float jumpForce = 5;
     public float rollForce = 5;
+    public float evadeForce = 5;
 
     public Transform groundCheck;
     public float groundDistance = 0.1f;
@@ -23,20 +22,32 @@ public class PlayerController : MonoBehaviour
 
     private bool isGrounded;
     private bool canRoll = true;
-    private bool isRolling = false;
+    private bool canEvade = true;
+    private bool isInvulnerable = false; // Variable para indicar si es invulnerable
+    private float lastTapTime = 0f;
+    private float doubleTapTime = 0.3f; // Tiempo permitido entre taps para rodar
+    private bool awaitingSecondTap = false;
 
-    public int maxHealth = 10;
+    public int maxHealth = 100;
     public int currentHealth;
+    public Text healthText;
+    public HealthBar healthBar; // Añade esta línea para la referencia a la barra de vida
 
     public int score = 0;
     public Text scoreText;
-    public Text healthText;
+    public ScoreBar scoreBar; // Añadir referencia al ScoreBar
+
+
+    private List<Renderer> renderers = new List<Renderer>();
 
     private void Start()
     {
         currentHealth = maxHealth;
         UpdateScoreUI();
         UpdateHealthUI();
+
+        // Obtener los renderers del personaje
+        renderers.AddRange(GetComponentsInChildren<Renderer>());
     }
 
     void Update()
@@ -52,84 +63,92 @@ public class PlayerController : MonoBehaviour
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
 
-        HandleMovement();
-        HandleRotation();
+        Vector3 direction = new Vector3(x, 0, y).normalized;
+
+        transform.Rotate(0, x * Time.deltaTime * rotationSpeed, 0);
+        transform.Translate(0, 0, y * Time.deltaTime * runSpeed);
+
+        animator.SetFloat("VelX", x);
+        animator.SetFloat("VelY", y);
+
+        if (Input.GetKey("f"))
+        {
+            animator.Play("SnakeDance");
+            animator.SetBool("Other", false);
+        }
+        if (Input.GetKey("g"))
+        {
+            animator.Play("BootyDance");
+            animator.SetBool("Other", false);
+        }
+
+        if (x != 0 || y != 0)
+        {
+            animator.SetBool("Other", true);
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
         }
 
-        if (Input.GetKeyDown(KeyCode.Z) && isGrounded && canRoll)
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            Roll();
-            StartCoroutine(RollCooldown());
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            ToggleLockOn();
-        }
-    }
-
-    void FixedUpdate()
-    {
-        if (x != 0 || y != 0)
-        {
-            Vector3 direction = new Vector3(x, 0, y).normalized;
-            Vector3 moveDir = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0) * direction;
-            rb.MovePosition(transform.position + moveDir.normalized * runSpeed * Time.fixedDeltaTime);
-        }
-    }
-
-    private void HandleMovement()
-    {
-        animator.SetFloat("VelX", x);
-        animator.SetFloat("VelY", y);
-
-        if (x != 0 || y != 0)
-        {
-            animator.SetBool("Other", true);
-        }
-        else
-        {
-            animator.SetBool("Other", false);
-        }
-    }
-
-    private void HandleRotation()
-    {
-        if (isLockedOn && lockOnTarget != null)
-        {
-            Vector3 targetDir = lockOnTarget.position - transform.position;
-            targetDir.y = 0;
-            transform.rotation = Quaternion.LookRotation(targetDir);
-        }
-        else
-        {
-            Vector3 direction = new Vector3(x, 0, y).normalized;
-            if (direction.magnitude >= 0.1f)
+            if (awaitingSecondTap)
             {
-                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + Camera.main.transform.eulerAngles.y;
-                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, 0.1f);
-                transform.rotation = Quaternion.Euler(0, angle, 0);
+                if (Time.time - lastTapTime < doubleTapTime)
+                {
+                    if (isGrounded && canRoll)
+                    {
+                        Roll();
+                        StartCoroutine(RollCooldown());
+                    }
+                }
+                awaitingSecondTap = false;
+            }
+            else
+            {
+                lastTapTime = Time.time;
+                awaitingSecondTap = true;
+                StartCoroutine(EvadeIfSingleTap());
             }
         }
+
+        
     }
 
     private void Jump()
     {
-        animator.Play("Jump");
+        // Resetea la velocidad vertical antes de saltar
         rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+
+        // Aplica la fuerza de salto
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
+        // Reproduce la animación de salto
+        animator.Play("Jump");
     }
 
     private void Roll()
     {
+        StartCoroutine(TemporaryInvulnerability(animator.GetCurrentAnimatorStateInfo(0).length));
         animator.Play("Roll");
         rb.AddForce(transform.forward * rollForce, ForceMode.Impulse);
-        isRolling = true;
-        StartCoroutine(DisableRollingAfterAnimation());
+    }
+
+    private void Evade()
+    {
+        // Detiene el movimiento
+        rb.velocity = Vector3.zero;
+
+        // Inicia la invulnerabilidad temporal durante la animación
+        StartCoroutine(TemporaryInvulnerability(animator.GetCurrentAnimatorStateInfo(0).length));
+
+        // Reproduce la animación de evasión
+        animator.Play("Evade");
+
+        // Aplica la fuerza de evasión
+        rb.AddForce(-transform.forward * evadeForce, ForceMode.Impulse);
     }
 
     private IEnumerator RollCooldown()
@@ -139,25 +158,60 @@ public class PlayerController : MonoBehaviour
         canRoll = true;
     }
 
-    private IEnumerator DisableRollingAfterAnimation()
+    private IEnumerator EvadeIfSingleTap()
     {
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
-        isRolling = false;
+        yield return new WaitForSeconds(doubleTapTime);
+        if (awaitingSecondTap && isGrounded && canEvade && !IsMoving())
+        {
+            Evade();
+        }
+        awaitingSecondTap = false;
+    }
+
+    private bool IsMoving()
+    {
+        return x != 0 || y != 0;
+    }
+
+    private IEnumerator TemporaryInvulnerability(float duration)
+    {
+        isInvulnerable = true;
+        yield return new WaitForSeconds(duration);
+        isInvulnerable = false;
     }
 
     public void TakeDamage(int damage)
     {
-        if (isRolling)
-        {
-            return;
-        }
+        if (isInvulnerable) return; // No recibe daño si es invulnerable
 
         currentHealth -= damage;
-        UpdateHealthUI();
-
         if (currentHealth <= 0)
         {
             Die();
+        }
+        else
+        {
+            StartCoroutine(DamageEffect());
+            StartCoroutine(TemporaryInvulnerability(1f)); // Hacer invulnerable por 1 segundo después de recibir daño
+        }
+        UpdateHealthUI();
+    }
+
+    private IEnumerator DamageEffect()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            // Alternar la visibilidad del personaje
+            foreach (var renderer in renderers)
+            {
+                renderer.enabled = false;
+            }
+            yield return new WaitForSeconds(0.1f);
+            foreach (var renderer in renderers)
+            {
+                renderer.enabled = true;
+            }
+            yield return new WaitForSeconds(0.1f);
         }
     }
 
@@ -170,13 +224,17 @@ public class PlayerController : MonoBehaviour
     {
         score += points;
         UpdateScoreUI();
+        if (scoreBar != null)
+        {
+            scoreBar.UpdateScore(score); // Actualizar la barra de puntuación
+        }
     }
 
     private void UpdateScoreUI()
     {
         if (scoreText != null)
         {
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Cerebros: " + score;
         }
     }
 
@@ -184,46 +242,11 @@ public class PlayerController : MonoBehaviour
     {
         if (healthText != null)
         {
-            healthText.text = "Health: " + currentHealth;
+            healthText.text = "Vida: " + currentHealth;
         }
-    }
-
-    private void ToggleLockOn()
-    {
-        if (isLockedOn)
+        if (healthBar != null)
         {
-            isLockedOn = false;
-            lockOnTarget = null;
-        }
-        else
-        {
-            FindLockOnTarget();
-        }
-    }
-
-    private void FindLockOnTarget()
-    {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 10f);
-        float closestDistance = Mathf.Infinity;
-        Transform closestTarget = null;
-
-        foreach (Collider hitCollider in hitColliders)
-        {
-            if (hitCollider.CompareTag("Enemy"))
-            {
-                float distance = Vector3.Distance(transform.position, hitCollider.transform.position);
-                if (distance < closestDistance)
-                {
-                    closestDistance = distance;
-                    closestTarget = hitCollider.transform;
-                }
-            }
-        }
-
-        if (closestTarget != null)
-        {
-            lockOnTarget = closestTarget;
-            isLockedOn = true;
+            healthBar.UpdateHealth(currentHealth);
         }
     }
 }
