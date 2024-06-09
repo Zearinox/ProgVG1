@@ -11,6 +11,10 @@ public class CannonballBehavior : MonoBehaviour
     public float explosionRadius = 5f; // Radio de la explosión
     public GameObject burnAreaPrefab; // Prefab del área quemada
     public GameObject explosionEffect; // Efecto de explosión visual
+    public GameObject fireEffect; // Efecto visual de fuego quemado
+    public AudioClip explosionSound; // Sonido de explosión
+    public AudioClip fireSound; // Sonido de fuego
+    public float maxDistance = 20f; // Distancia máxima para escuchar el sonido completamente
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -39,6 +43,17 @@ public class CannonballBehavior : MonoBehaviour
             Instantiate(explosionEffect, transform.position, transform.rotation);
         }
 
+        // Reproducir el sonido de explosión con atenuación según la distancia
+        if (explosionSound != null)
+        {
+            AudioSource explosionAudioSource = gameObject.AddComponent<AudioSource>();
+            explosionAudioSource.clip = explosionSound;
+            explosionAudioSource.spatialBlend = 1.0f; // Sonido 3D
+            explosionAudioSource.maxDistance = maxDistance;
+            explosionAudioSource.Play();
+            Destroy(explosionAudioSource, explosionSound.length); // Destruir el AudioSource después de reproducir el sonido
+        }
+
         // Encontrar todos los objetos en el radio de la explosión
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
         foreach (Collider nearbyObject in colliders)
@@ -62,6 +77,19 @@ public class CannonballBehavior : MonoBehaviour
             if (burnAreaScript != null)
             {
                 burnAreaScript.Initialize(burnDuration, burnDamagePerSecond);
+            }
+
+            // Instanciar el efecto visual de fuego quemado y reproducir el sonido de fuego
+            if (fireEffect != null)
+            {
+                GameObject fire = Instantiate(fireEffect, transform.position, Quaternion.identity);
+                AudioSource fireAudioSource = fire.AddComponent<AudioSource>();
+                fireAudioSource.clip = fireSound;
+                fireAudioSource.spatialBlend = 1.0f; // Sonido 3D
+                fireAudioSource.maxDistance = maxDistance;
+                fireAudioSource.loop = true;
+                fireAudioSource.Play();
+                Destroy(fire, burnDuration); // Destruir el efecto visual después de la duración
             }
         }
     }

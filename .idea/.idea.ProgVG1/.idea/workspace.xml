@@ -5,78 +5,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3c4de33-85d5-4d5a-bdd5-26bb1aeb5476" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Explosion.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Explosion.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Explosion.tif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Explosion.tif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Fire.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Fire.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/FloorFire.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/FloorFire.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Point Light.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Point Light.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/fireFlash.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/fireFlash.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/fuego.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/fuego.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BrainPuntaje 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BrainPuntaje 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Explosion.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/ProyectilCannon.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/ProyectilCannon.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreFlechadora.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreFlechadora.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/burnAreaPrefab.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/burnAreaPrefab.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ArrowTower.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ArrowTower.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BurnArea.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BurnArea.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CannonTower.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CannonTower111.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CannonTower111.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Alarm.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Alarm.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Coin01.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Coin01.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Downer01.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Downer01.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FX01.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FX01.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FX02.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/FX02.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise01.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise01.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise02.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise02.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise03.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise03.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise04.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise04.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise05.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise05.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise06.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise06.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise07.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Rise07.aif.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Upper01.aif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Upper01.aif.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/FireFloor.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/FireFloor.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/explosion.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/explosion.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/fireSound.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/fireSound.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/glauncher.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/glauncher.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/glauncher2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/glauncher2.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/glauncher3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/glauncher3.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/grenade.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/grenade.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/grenade2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/grenade2.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/grenade3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/grenade3.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/jumppad.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/jumppad.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/jumppad2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/jumppad2.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/license.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/minigun.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/minigun.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/minigun2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/minigun2.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/minigun3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/minigun3.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/outofammo.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/outofammo.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/pistol.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/pistol.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/pistol2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/pistol2.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/pistol3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/pistol3.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/quaddamage_out.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/quaddamage_out.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/quaddamage_shoot.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/quaddamage_shoot.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/readme.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/ren.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/ren.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/ren2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/ren2.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/ren3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/ren3.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rifle.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rifle.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rifle2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rifle2.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rifle3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rifle3.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rlauncher.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rlauncher.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rlauncher2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rlauncher2.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rlauncher3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/rlauncher3.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/shotgun.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/shotgun.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/shotgun2.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/shotgun2.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/shotgun3.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/shotgun3.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/teleport.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/teleport.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/weapswitch.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Cannons/weapswitch.ogg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreFlecha.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreFlecha.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BrainPickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BrainPickup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CrossbowTurret.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CrossbowTurret.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ProyectilCannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ProyectilCannon.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/burnAreaPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/burnAreaPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/fire.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/fire.wav.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +195,7 @@
       <workItem from="1717600006108" duration="3896000" />
       <workItem from="1717610827227" duration="3000" />
       <workItem from="1717611049753" duration="9338000" />
-      <workItem from="1717893296394" duration="6930000" />
+      <workItem from="1717893296394" duration="9346000" />
     </task>
     <servers />
   </component>

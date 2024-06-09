@@ -121,6 +121,9 @@ MonoBehaviour:
   explosionRadius: 5
   burnAreaPrefab: {fileID: 2569287741885065251, guid: 4be2b06766a5f9e429b42617926569b9, type: 3}
   explosionEffect: {fileID: 6436460721798696432, guid: 22488607ad903e44c9220e50e4ed44cc, type: 3}
+  fireEffect: {fileID: 5402051769145552285, guid: a1a0252b049f8e34fbb9bdbd13255613, type: 3}
+  explosionSound: {fileID: 8300000, guid: 5706f56c62965d7438ae521081fa36d2, type: 3}
+  fireSound: {fileID: 8300000, guid: e452bb751d8dd8f40b5a9960ee2a6a01, type: 3}
 --- !u!135 &-6248631778912433776
 SphereCollider:
   m_ObjectHideFlags: 0

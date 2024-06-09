@@ -12,6 +12,8 @@ public class CannonTower : MonoBehaviour
     public float detectionRange = 15f; // Rango máximo de detección del objetivo
     public float minDetectionRange = 5f; // Rango mínimo de detección del objetivo
     public Vector3 rotationOffset; // Offset de rotación para ajustar la orientación
+    public AudioClip fireSound; // Sonido al disparar
+    public float maxDistance = 20f; // Distancia máxima para escuchar el sonido completamente
 
     private Transform target; // Referencia al objetivo (personaje)
     private float fireCountdown;
@@ -65,6 +67,17 @@ public class CannonTower : MonoBehaviour
         {
             // Aplicar fuerza para disparar el proyectil
             rb.velocity = direction * projectileSpeed;
+        }
+
+        // Reproducir el sonido de disparo con atenuación según la distancia
+        if (fireSound != null)
+        {
+            AudioSource fireAudioSource = gameObject.AddComponent<AudioSource>();
+            fireAudioSource.clip = fireSound;
+            fireAudioSource.spatialBlend = 1.0f; // Sonido 3D
+            fireAudioSource.maxDistance = maxDistance;
+            fireAudioSource.Play();
+            Destroy(fireAudioSource, fireSound.length); // Destruir el AudioSource después de reproducir el sonido
         }
     }
 
