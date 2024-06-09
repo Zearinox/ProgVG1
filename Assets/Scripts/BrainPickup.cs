@@ -5,6 +5,16 @@ using UnityEngine;
 public class BrainPickup : MonoBehaviour
 {
     public int points = 1; // Puntos que este objeto dará al jugador
+    public AudioClip pickupSound; // El sonido que se reproducirá
+    public GameObject efectoBrillo; // Referencia al objeto hijo EfectoBrillo
+
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        
+        audioSource = gameObject.AddComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,16 +25,26 @@ public class BrainPickup : MonoBehaviour
             {
                 Debug.Log("Cerebro recogido, añadiendo puntos.");
                 player.AddScore(points);
-                Destroy(gameObject); // Destruye el objeto después de recogerlo
+
+                // Reproducir el sonido inmediatamente
+                if (pickupSound != null)
+                {
+                    // Reproducir el sonido y crear un objeto temporal para reproducirlo
+                    AudioSource.PlayClipAtPoint(pickupSound, transform.position);
+
+                    // Destruir los hijos inmediatamente
+                    if (efectoBrillo != null)
+                    {
+                        Destroy(efectoBrillo);
+                    }
+
+                    // Destruir el objeto principal inmediatamente
+                    Destroy(gameObject);
+                }
+                
             }
-            else
-            {
-                Debug.LogWarning("El objeto con el que colisionó no tiene un componente PlayerController.");
-            }
+            
         }
-        else
-        {
-            Debug.Log("El objeto con el que colisionó no tiene el tag 'Player'.");
-        }
+        
     }
 }
