@@ -8,16 +8,21 @@ public class ArrowTower : MonoBehaviour
     public Transform firePoint; // Punto de origen de la flecha
     public float minFireRate = 1f; // Tiempo mínimo entre disparos
     public float maxFireRate = 3f; // Tiempo máximo entre disparos
-    public float arrowSpeed = 10f; // Velocidad de la flecha
+    public float projectileSpeed = 10f; // Velocidad de la flecha
     public float detectionRange = 15f; // Rango máximo de detección del objetivo
     public float minDetectionRange = 5f; // Rango mínimo de detección del objetivo
     public Vector3 rotationOffset; // Offset de rotación para ajustar la orientación
-    public Transform target; // Referencia al objetivo (personaje)
+    public AudioClip fireSound; // Sonido al disparar
+    public float maxDistance = 20f; // Distancia máxima para escuchar el sonido completamente
+    public float fireVolume = 1f; // Volumen del sonido de disparo
+
+    private Transform target; // Referencia al objetivo (personaje)
     private float fireCountdown;
 
     void Start()
     {
         // Encuentra al jugador por etiqueta
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         SetRandomFireCountdown();
     }
 
@@ -41,7 +46,7 @@ public class ArrowTower : MonoBehaviour
             // Disparar flechas a intervalos aleatorios
             if (fireCountdown <= 0f)
             {
-                Shoot(direction);
+                Shoot();
                 SetRandomFireCountdown();
             }
 
@@ -54,15 +59,29 @@ public class ArrowTower : MonoBehaviour
         fireCountdown = Random.Range(minFireRate, maxFireRate);
     }
 
-    void Shoot(Vector3 direction)
+    void Shoot()
     {
         // Instanciar la flecha en el punto de origen
-        GameObject arrowGO = Instantiate(arrowPrefab, firePoint.position, Quaternion.LookRotation(direction));
-        Rigidbody rb = arrowGO.GetComponent<Rigidbody>();
-        if (rb != null)
+        GameObject arrowGO = Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
+        ArrowBehavior arrowBehavior = arrowGO.GetComponent<ArrowBehavior>();
+        if (arrowBehavior != null)
         {
-            // Aplicar fuerza para disparar la flecha
-            rb.velocity = direction * arrowSpeed;
+            // Asignar la posición del objetivo al momento del disparo
+            arrowBehavior.SetTargetPosition(target.position);
+        }
+
+        // Reproducir el sonido de disparo con atenuación según la distancia
+        if (fireSound != null)
+        {
+            GameObject soundObject = new GameObject("FireSound");
+            soundObject.transform.position = firePoint.position;
+            AudioSource fireAudioSource = soundObject.AddComponent<AudioSource>();
+            fireAudioSource.clip = fireSound;
+            fireAudioSource.spatialBlend = 1.0f; // Sonido 3D
+            fireAudioSource.maxDistance = maxDistance;
+            fireAudioSource.volume = fireVolume;
+            fireAudioSource.Play();
+            Destroy(soundObject, fireSound.length); // Destruir el objeto de sonido después de reproducir el sonido
         }
     }
 

@@ -15,6 +15,9 @@ public class CannonballBehavior : MonoBehaviour
     public AudioClip explosionSound; // Sonido de explosión
     public AudioClip fireSound; // Sonido de fuego
     public float maxDistance = 20f; // Distancia máxima para escuchar el sonido completamente
+    public float explosionVolume = 1f; // Volumen de la explosión
+    public float fireVolume = 1f; // Volumen del fuego
+    public float explosionDuration = 2f; // Duración de la animación de explosión
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -40,7 +43,8 @@ public class CannonballBehavior : MonoBehaviour
         // Mostrar el efecto de explosión
         if (explosionEffect != null)
         {
-            Instantiate(explosionEffect, transform.position, transform.rotation);
+            GameObject explosion = Instantiate(explosionEffect, transform.position, transform.rotation);
+            Destroy(explosion, explosionDuration); // Destruir la animación de explosión después de la duración
         }
 
         // Reproducir el sonido de explosión con atenuación según la distancia
@@ -50,6 +54,7 @@ public class CannonballBehavior : MonoBehaviour
             explosionAudioSource.clip = explosionSound;
             explosionAudioSource.spatialBlend = 1.0f; // Sonido 3D
             explosionAudioSource.maxDistance = maxDistance;
+            explosionAudioSource.volume = explosionVolume;
             explosionAudioSource.Play();
             Destroy(explosionAudioSource, explosionSound.length); // Destruir el AudioSource después de reproducir el sonido
         }
@@ -88,6 +93,7 @@ public class CannonballBehavior : MonoBehaviour
                 fireAudioSource.spatialBlend = 1.0f; // Sonido 3D
                 fireAudioSource.maxDistance = maxDistance;
                 fireAudioSource.loop = true;
+                fireAudioSource.volume = fireVolume;
                 fireAudioSource.Play();
                 Destroy(fire, burnDuration); // Destruir el efecto visual después de la duración
             }

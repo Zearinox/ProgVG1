@@ -14,6 +14,7 @@ public class CannonTower : MonoBehaviour
     public Vector3 rotationOffset; // Offset de rotación para ajustar la orientación
     public AudioClip fireSound; // Sonido al disparar
     public float maxDistance = 20f; // Distancia máxima para escuchar el sonido completamente
+    public float fireVolume = 1f; // Volumen del sonido de disparo
 
     private Transform target; // Referencia al objetivo (personaje)
     private float fireCountdown;
@@ -76,6 +77,7 @@ public class CannonTower : MonoBehaviour
             fireAudioSource.clip = fireSound;
             fireAudioSource.spatialBlend = 1.0f; // Sonido 3D
             fireAudioSource.maxDistance = maxDistance;
+            fireAudioSource.volume = fireVolume;
             fireAudioSource.Play();
             Destroy(fireAudioSource, fireSound.length); // Destruir el AudioSource después de reproducir el sonido
         }
