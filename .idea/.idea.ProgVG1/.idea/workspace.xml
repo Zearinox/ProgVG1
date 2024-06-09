@@ -5,50 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3c4de33-85d5-4d5a-bdd5-26bb1aeb5476" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/AnimatorPlayer.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/AnimatorPlayer.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/BootyDance.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/BootyDance.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Die.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Die.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Dodge.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Dodge.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Idle.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Idle.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Jump.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Jump.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/LeftStrafe.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/LeftStrafe.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Player.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Player.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Roll.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Roll.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Running.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Running.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/SnakeDance.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/SnakeDance.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Walk.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Player/Animations/Walk.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreFlecha.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreFlecha.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel 1.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel 1.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ArrowBehavior.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ArrowBehavior.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CrossbowTurret.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CrossbowTurret.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Script/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel 1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +31,10 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArrowBehavior.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CrossbowTurret.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BurnArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HomingProjectile.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -157,6 +119,7 @@
       <workItem from="1717600006108" duration="3896000" />
       <workItem from="1717610827227" duration="3000" />
       <workItem from="1717611049753" duration="9338000" />
+      <workItem from="1717893296394" duration="18126000" />
     </task>
     <servers />
   </component>
