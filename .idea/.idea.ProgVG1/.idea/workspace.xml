@@ -5,62 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3c4de33-85d5-4d5a-bdd5-26bb1aeb5476" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Music.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music/TuneDown.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Music/TuneDown.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/HomingProjectile.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/HomingProjectile.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna 2 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna 2 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna Final.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna Final.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreMagicaViolenta Final.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreMagicaViolenta Final.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreMagicaViolenta.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreMagicaViolenta.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/arrowPrefab.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/arrowPrefab.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HomingProjectile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HomingProjectile.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HomingTower.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HomingTower.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Magic Missiles.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Magic Missiles.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit01.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit01.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit02.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit02.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit03.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit03.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit04.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit04.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit05.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit05.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit06.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit06.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit07.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit07.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit08.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/arrowHit08.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/piercing-1a.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/piercing-1a.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/piercing-1b.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/piercing-1b.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/piercing-arm-2a.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/piercing-arm-2a.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/piercing-arm-2b.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/piercing-arm-2b.wav.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ProyectilCannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ProyectilCannon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreFlecha.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreFlecha.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Script/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArrowBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArrowBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArrowTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArrowTower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +119,7 @@
       <workItem from="1717600006108" duration="3896000" />
       <workItem from="1717610827227" duration="3000" />
       <workItem from="1717611049753" duration="9338000" />
-      <workItem from="1717893296394" duration="15734000" />
+      <workItem from="1717893296394" duration="18126000" />
     </task>
     <servers />
   </component>
