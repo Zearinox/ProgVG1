@@ -13,7 +13,7 @@ public class ArrowBehavior : MonoBehaviour
     public float maxDistance = 20f; // Distancia máxima para escuchar el sonido completamente
 
     private Vector3 targetPosition; // Posición del objetivo en el momento del disparo
-    private bool targetPositionSet = false;
+    
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class ArrowBehavior : MonoBehaviour
     public void SetTargetPosition(Vector3 position)
     {
         targetPosition = position;
-        targetPositionSet = true;
+        
         // Calcular la dirección inicial hacia el objetivo
         Vector3 direction = (targetPosition - transform.position).normalized;
         GetComponent<Rigidbody>().velocity = direction * speed;

@@ -2,12 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     public float runSpeed = 7;
     public float rotationSpeed = 10;
     public Animator animator;
+    public GameObject deathUI; // Referencia al nuevo Canvas de la UI de muerte
+    public AudioClip deathUISound; // Referencia al AudioSource de la UI de muerte
+    public float deathVolume = 1f;
+    public AudioClip painDeathSound;
+    private bool isDead = false;
 
     private float x, y;
 
@@ -37,7 +43,6 @@ public class PlayerController : MonoBehaviour
     public Text scoreText;
     public ScoreBar scoreBar; // Añadir referencia al ScoreBar
 
-
     private List<Renderer> renderers = new List<Renderer>();
 
     private void Start()
@@ -45,8 +50,7 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
         UpdateScoreUI();
         UpdateHealthUI();
-
-        // Obtener los renderers del personaje
+        deathUI.SetActive(false); // Asegúrate de que la UI esté desactivada al inicio
         renderers.AddRange(GetComponentsInChildren<Renderer>());
     }
 
@@ -113,19 +117,11 @@ public class PlayerController : MonoBehaviour
                 StartCoroutine(EvadeIfSingleTap());
             }
         }
-
-        
     }
 
     private void Jump()
     {
-        // Resetea la velocidad vertical antes de saltar
-        rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-
-        // Aplica la fuerza de salto
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-
-        // Reproduce la animación de salto
         animator.Play("Jump");
     }
 
@@ -138,16 +134,9 @@ public class PlayerController : MonoBehaviour
 
     private void Evade()
     {
-        // Detiene el movimiento
         rb.velocity = Vector3.zero;
-
-        // Inicia la invulnerabilidad temporal durante la animación
         StartCoroutine(TemporaryInvulnerability(animator.GetCurrentAnimatorStateInfo(0).length));
-
-        // Reproduce la animación de evasión
         animator.Play("Evade");
-
-        // Aplica la fuerza de evasión
         rb.AddForce(-transform.forward * evadeForce, ForceMode.Impulse);
     }
 
@@ -182,7 +171,7 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (isInvulnerable) return; // No recibe daño si es invulnerable
+        if (isInvulnerable) return;
 
         currentHealth -= damage;
         if (currentHealth <= 0)
@@ -192,7 +181,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             StartCoroutine(DamageEffect());
-            StartCoroutine(TemporaryInvulnerability(1f)); // Hacer invulnerable por 1 segundo después de recibir daño
+            StartCoroutine(TemporaryInvulnerability(1f));
         }
         UpdateHealthUI();
     }
@@ -201,7 +190,6 @@ public class PlayerController : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            // Alternar la visibilidad del personaje
             foreach (var renderer in renderers)
             {
                 renderer.enabled = false;
@@ -215,9 +203,59 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    IEnumerator ShowDeathUIAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        deathUI.SetActive(true);
+        Debug.Log("Reproduciendo sonido de la UI de muerte");
+        MuteAllSounds();
+    }
+
     private void Die()
     {
-        animator.Play("Die");
+        if (!isDead)
+        {
+            isDead = true;
+            animator.Play("Die");
+            if (painDeathSound != null)
+            {
+                AudioSource painDeathAudioSource = gameObject.AddComponent<AudioSource>();
+                painDeathAudioSource.clip = painDeathSound;
+                painDeathAudioSource.spatialBlend = 0.0f;
+                painDeathAudioSource.volume = deathVolume;
+                painDeathAudioSource.loop = false; // Asegúrate de que no se repita
+                painDeathAudioSource.Play();
+                Destroy(painDeathAudioSource, painDeathSound.length); // Destruye el AudioSource después de que se complete la reproducción
+            }
+            StartCoroutine(ShowDeathUIAfterDelay(4f));
+            StartCoroutine(RestartSceneAfterDelay(14f));
+        }
+    }
+
+    IEnumerator RestartSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void MuteAllSounds()
+    {
+        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource audioSource in allAudioSources)
+        {
+            audioSource.mute = true;
+        }
+        if (deathUISound != null)
+        {
+            AudioSource deathAudioSource = gameObject.AddComponent<AudioSource>();
+            deathAudioSource.clip = deathUISound;
+            deathAudioSource.spatialBlend = 0.0f;
+            deathAudioSource.volume = deathVolume;
+            deathAudioSource.loop = false; // Asegúrate de que no se repita
+            deathAudioSource.Play();
+            Destroy(deathAudioSource, deathUISound.length); // Destruye el AudioSource después de que se complete la reproducción
+        }
+      
     }
 
     public void AddScore(int points)
@@ -226,7 +264,7 @@ public class PlayerController : MonoBehaviour
         UpdateScoreUI();
         if (scoreBar != null)
         {
-            scoreBar.UpdateScore(score); // Actualizar la barra de puntuación
+            scoreBar.UpdateScore(score);
         }
     }
 
