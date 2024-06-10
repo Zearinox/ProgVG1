@@ -100,12 +100,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 9
   homingDuration: 5
-  directDamage: 1
-  explosionDamage: 1
+  directDamage: 5
+  explosionDamage: 3
   explosionRadius: 5
   explosionEffect: {fileID: 6436460721798696432, guid: 22488607ad903e44c9220e50e4ed44cc, type: 3}
   explosionSound: {fileID: 8300000, guid: 52635ff01be5aaa42b414e806ebccd87, type: 3}
-  explosionVolume: 3
+  explosionVolume: 1
   maxDistance: 20
 --- !u!135 &-5316855240510465925
 SphereCollider:

@@ -209,13 +209,13 @@ MonoBehaviour:
   firePoint: {fileID: 4007843045120905777}
   minFireRate: 1
   maxFireRate: 3
-  projectileSpeed: 10
+  projectileSpeed: 14
   detectionRange: 40
   minDetectionRange: 15
   rotationOffset: {x: 0, y: 180, z: 0}
   fireSound: {fileID: 8300000, guid: e452bb751d8dd8f40b5a9960ee2a6a01, type: 3}
   maxDistance: 40
-  fireVolume: 0.5
+  fireVolume: 0.9
 --- !u!1 &6959324070726569157
 GameObject:
   m_ObjectHideFlags: 0

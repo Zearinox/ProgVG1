@@ -49,7 +49,7 @@ MonoBehaviour:
   firePoint: {fileID: 4311133358751537211}
   minFireRate: 1
   maxFireRate: 3
-  projectileSpeed: 12
+  projectileSpeed: 16
   detectionRange: 50
   minDetectionRange: 14
   rotationOffset: {x: 0, y: 180, z: 0}
