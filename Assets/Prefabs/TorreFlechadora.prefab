@@ -48,8 +48,8 @@ MonoBehaviour:
   arrowPrefab: {fileID: 4864306054788752418, guid: 86e3dd61e5f76c3429b6fac35421a496, type: 3}
   firePoint: {fileID: 4311133358751537211}
   minFireRate: 1
-  maxFireRate: 3
-  projectileSpeed: 16
+  maxFireRate: 2
+  projectileSpeed: 22
   detectionRange: 50
   minDetectionRange: 14
   rotationOffset: {x: 0, y: 180, z: 0}

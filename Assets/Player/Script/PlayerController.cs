@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     public int score = 0;
     public Text scoreText;
     public ScoreBar scoreBar; // Añadir referencia al ScoreBar
-
+    public int pointsToWin = 10;
     private List<Renderer> renderers = new List<Renderer>();
 
     private void Start()
@@ -266,8 +266,18 @@ public class PlayerController : MonoBehaviour
         {
             scoreBar.UpdateScore(score);
         }
+        if (score >= pointsToWin)
+        {
+            WinGame();
+        }
     }
-
+    private void WinGame()
+    {
+        // Mostrar la pantalla de victoria
+        // Esto podría ser una nueva escena o una UI en la escena actual
+        Debug.Log("¡Has ganado el juego!");
+        SceneManager.LoadScene("VictoryScene"); // Asegúrate de que la escena 'VictoryScene' esté añadida en los Build Settings
+    }
     private void UpdateScoreUI()
     {
         if (scoreText != null)

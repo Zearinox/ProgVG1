@@ -5,36 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3c4de33-85d5-4d5a-bdd5-26bb1aeb5476" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Main Menu.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/ChamplooEndingLoopLoPass.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/ChamplooEndingLoopLoPass.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/ChamplooEndingWithIntroLowPass.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/ChamplooEndingWithIntroLowPass.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Jazz Jackrabbit 2 Music - Castle.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Jazz Jackrabbit 2 Music - Castle.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Jazz Jackrabbit 2 Music - Intro.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Jazz Jackrabbit 2 Music - Intro.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Jazz Jackrabbit 2 Music - Labrat.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Jazz Jackrabbit 2 Music - Labrat.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Jazz Jackrabbit 2 Music - Menu.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/Jazz Jackrabbit 2 Music - Menu.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/select-sound-thing-100628.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/select-sound-thing-100628.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Box.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Box.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BoxTower.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BoxTower.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/VictoryScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/VictoryScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VictoryScene.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/VictoryScene.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/victory.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UI/victory.jpg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Materials/Rock2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FantasyEnvironments/Environments/Materials/Rock2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/AnimatorPlayer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Animations/AnimatorPlayer.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Script/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HomingProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HomingProjectile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ProyectilCannon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ProyectilCannon.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna Final.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna Final.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreFlechadora.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreFlechadora.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreMagicaViolenta Final.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreMagicaViolenta Final.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/arrowPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/arrowPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel 1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel 1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ui.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ui.webp.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,13 +55,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ArrowBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BurnArea.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HomingProjectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PushRigidBody.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VictoryScene.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -151,7 +147,8 @@
       <workItem from="1717610827227" duration="3000" />
       <workItem from="1717611049753" duration="9338000" />
       <workItem from="1717893296394" duration="18126000" />
-      <workItem from="1717943765966" duration="31681000" />
+      <workItem from="1717943765966" duration="34304000" />
+      <workItem from="1717993947531" duration="1677000" />
     </task>
     <servers />
   </component>
