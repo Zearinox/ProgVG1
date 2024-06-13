@@ -6,7 +6,7 @@ using UnityEngine;
 public class PushRigidBody : MonoBehaviour
 {
     public float pushPower = 2.0f;
-    public Animator animator; // Referencia al Animator del personaje
+    public Animator animator;
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         Rigidbody body = hit.collider.attachedRigidbody;
