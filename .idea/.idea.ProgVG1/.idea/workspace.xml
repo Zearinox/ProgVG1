@@ -5,158 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3c4de33-85d5-4d5a-bdd5-26bb1aeb5476" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/2.0/machine.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/2.0/settings.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/2.0/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/4.0/machine.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/4.0/settings.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/4.0/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/4.5/machine.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/4.5/settings.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/4.5/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/browscap.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/MonoBleedingEdge/etc/mono/mconfig/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/Cinemachine.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/Mono.Security.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.ComponentModel.Composition.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Configuration.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Data.DataSetExtensions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Data.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Drawing.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.EnterpriseServices.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.IO.Compression.FileSystem.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.IO.Compression.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Net.Http.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Numerics.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Runtime.Serialization.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Security.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.ServiceModel.Internals.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Transactions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Xml.Linq.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.Xml.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/System.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/Unity.TerrainTools.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/Unity.TextMeshPro.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/Unity.Timeline.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/Unity.VisualScripting.Core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/Unity.VisualScripting.Flow.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/Unity.VisualScripting.State.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.AIModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.ARModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.AccessibilityModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.AndroidJNIModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.AnimationModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.AssetBundleModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.AudioModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.ClothModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.ClusterInputModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.ClusterRendererModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.CoreModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.CrashReportingModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.DSPGraphModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.DirectorModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.GIModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.GameCenterModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.GridModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.HotReloadModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.IMGUIModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.ImageConversionModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.InputLegacyModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.InputModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.JSONSerializeModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.LocalizationModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.NVIDIAModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.ParticleSystemModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.PerformanceReportingModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.Physics2DModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.PhysicsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.ProfilerModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.ScreenCaptureModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.SharedInternalsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.SpriteMaskModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.SpriteShapeModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.StreamingModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.SubstanceModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.SubsystemsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.TLSModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.TerrainModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.TextRenderingModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.TilemapModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UIElementsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UIElementsNativeModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UIModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UNETModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UmbraModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UnityConnectModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UnityCurlModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UnityWebRequestModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.VFXModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.VRModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.VehiclesModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.VideoModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.VirtualTexturingModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.WindModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.XRModule.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/UnityEngine.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/mscorlib.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Managed/netstandard.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Resources/unity default resources" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/Resources/unity_builtin_extra" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/RuntimeInitializeOnLoads.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/ScriptingAssemblies.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/app.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/boot.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/globalgamemanagers" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/globalgamemanagers.assets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/level0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/level0.resS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/level1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/level1.resS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/level2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/level2.resS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/resources.assets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/resources.assets.resS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/sharedassets0.assets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/sharedassets0.assets.resS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/sharedassets0.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/sharedassets1.assets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/sharedassets1.assets.resS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/sharedassets1.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/sharedassets2.assets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/sharedassets2.assets.resS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/ProgVG1_Data/sharedassets2.resource" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/UnityCrashHandler64.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameExe/UnityPlayer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/CajaEmpujable.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/CajaEmpujable.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ShinraTensei.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ShinraTensei.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ShockwaveController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ShockwaveController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/ShinraTensei.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sounds/ShinraTensei.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/AnimatorPlayer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Animations/AnimatorPlayer.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/arrowPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/arrowPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/BootyDance.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Animations/BootyDance.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Push.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Animations/Push.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HomingProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HomingProjectile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PushRigidBody.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PushRigidBody.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +52,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HomingProjectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PushRigidBody.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShinraTensei.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShockwaveController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VictoryScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.8.9/Runtime/Behaviours/CinemachineFollowZoom.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -284,6 +152,7 @@
       <workItem from="1717943765966" duration="34304000" />
       <workItem from="1717993947531" duration="2271000" />
       <workItem from="1718056154623" duration="2634000" />
+      <workItem from="1718281700209" duration="15429000" />
     </task>
     <servers />
   </component>
