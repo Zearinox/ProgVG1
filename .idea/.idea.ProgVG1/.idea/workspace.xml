@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3c4de33-85d5-4d5a-bdd5-26bb1aeb5476" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/CajaEmpujable.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/CajaEmpujable.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ShinraTensei.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ShinraTensei.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ShockwaveController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ShockwaveController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/ShinraTensei.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sounds/ShinraTensei.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/AnimatorPlayer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Animations/AnimatorPlayer.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/BootyDance.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Animations/BootyDance.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Jumping.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Animations/Jumping.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Push.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Animations/Push.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BoxTower.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BoxTower.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BrainPuntaje.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BrainPuntaje.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CannonballBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HomingProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HomingProjectile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PushRigidBody.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PushRigidBody.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +143,7 @@
       <workItem from="1717943765966" duration="34304000" />
       <workItem from="1717993947531" duration="2271000" />
       <workItem from="1718056154623" duration="2634000" />
-      <workItem from="1718281700209" duration="15429000" />
+      <workItem from="1718281700209" duration="21303000" />
     </task>
     <servers />
   </component>

@@ -8,16 +8,14 @@ public class PushRigidBody : MonoBehaviour
     public Animator animator;
     private bool isPushing = false;
     private Rigidbody currentBody = null;
-
-
     private void Update()
     {
         if ((Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0) )
         {
             StopPushAnimation();
+            
         }
     }
-
     private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.CompareTag("Pushable"))
@@ -40,7 +38,6 @@ public class PushRigidBody : MonoBehaviour
             }
         }
     }
-
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.CompareTag("Pushable") && collision.collider.attachedRigidbody == currentBody)
@@ -55,18 +52,17 @@ public class PushRigidBody : MonoBehaviour
         {
             isPushing = true;
             currentBody = body;
-            animator.SetTrigger("StartPush");
+            animator.SetBool("isPushing",isPushing);
             Debug.Log("StartPush Trigger Set");
         }
     }
-
     private void StopPushAnimation()
     {
         if (isPushing)
         {
             isPushing = false;
             currentBody = null;
-            animator.SetTrigger("StopPush");
+            animator.SetBool("isPushing",isPushing);
             Debug.Log("Para esta animación esta cosa?");
         }
     }
