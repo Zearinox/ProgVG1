@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Wall
   - Pushable
+  - Enemy
+  - Torres
+  - Terrain
   layers:
   - Default
   - TransparentFX

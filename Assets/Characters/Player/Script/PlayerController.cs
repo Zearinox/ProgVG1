@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     public ScoreBar scoreBar; // Añadir referencia al ScoreBar
     public int pointsToWin = 10;
     private List<Renderer> renderers = new List<Renderer>();
-
+    
     private void Start()
     {
         currentHealth = maxHealth;
@@ -206,9 +206,10 @@ public class PlayerController : MonoBehaviour
     {
         
         yield return new WaitForSeconds(delay);
-        deathUI.SetActive(true);
-        Debug.Log("Reproduciendo sonido de la UI de muerte");
         MuteAllSounds();
+        deathUI.SetActive(true);
+        
+        Debug.Log("Reproduciendo sonido de la UI de muerte");
     }
 
     private void Die()
@@ -227,6 +228,7 @@ public class PlayerController : MonoBehaviour
                 painDeathAudioSource.Play();
                 Destroy(painDeathAudioSource, painDeathSound.length); // Destruye el AudioSource después de que se complete la reproducción
             }
+            
             StartCoroutine(ShowDeathUIAfterDelay(4f));
             StartCoroutine(RestartSceneAfterDelay(14f));
         }

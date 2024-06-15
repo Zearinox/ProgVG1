@@ -5,144 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3c4de33-85d5-4d5a-bdd5-26bb1aeb5476" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Characters.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Animations/Warrok W Kurniawan@Mutant Walking.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Animations/Warrok W Kurniawan@Mutant Walking.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Animations/Warrok W Kurniawan@Orc Idle.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Animations/Warrok W Kurniawan@Orc Idle.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Animations/Warrok W Kurniawan@Standing Melee Attack 360 High.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Animations/Warrok W Kurniawan@Standing Melee Attack 360 High.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Animations/Warrok W Kurniawan@Sword And Shield Death.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Animations/Warrok W Kurniawan@Sword And Shield Death.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/BossAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/BossAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/EnemyAI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/EnemyAI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Materials/bear_diffuse.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Materials/bear_diffuse.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbm.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbm/bear_diffuse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbm/bear_diffuse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbm/bear_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbm/bear_normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbm/bear_specular.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbm/bear_specular.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/AnimatorPlayer.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/AnimatorPlayer.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/BootyDance.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/BootyDance.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Die.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Die.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Evade.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Evade.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Idle.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Idle.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Jump.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Jump.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Jump111.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Jump111.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Jumping.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Jumping.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/LeftStrafe.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/LeftStrafe.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Player.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Player.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Push.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Push.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Rolling.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Rolling.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Running.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Running.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/SnakeDance.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/SnakeDance.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Walk.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Walk.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Script/PlayerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Script/PlayerController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/Mremireh O Desbiens.dae" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/Mremireh O Desbiens.dae.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_body__diffuse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_body__diffuse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_body_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_body_normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_body_specular.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_body_specular.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_shoe_diffuse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_shoe_diffuse.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_shoe_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_shoe_normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_shoe_specular.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Textures/textures/mremireh_shoe_specular.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/NavMesh.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1/NavMesh.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/AnimatorPlayer.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/AnimatorPlayer.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/BootyDance.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/BootyDance.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Die.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Die.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Evade.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Evade.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Idle.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Idle.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Jump.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Jump.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Jump111.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Jump111.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Jumping.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Jumping.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/LeftStrafe.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/LeftStrafe.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Player.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Player.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Push.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Push.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Rolling.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Rolling.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Running.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Running.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/SnakeDance.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/SnakeDance.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Walk.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Walk.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Script.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Script/PlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Script/PlayerController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/Mremireh O Desbiens.dae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/Mremireh O Desbiens.dae.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_body__diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_body__diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_body_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_body_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_body_specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_body_specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_shoe_diffuse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_shoe_diffuse.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_shoe_normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_shoe_normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_shoe_specular.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/textures/mremireh_shoe_specular.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna Final.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna Final.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreFlechadora.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreFlechadora.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreMagicaViolenta Final.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreMagicaViolenta Final.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Characters/Boss/BossAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Boss/BossAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Characters/Boss/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Boss/EnemyAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Characters/Player/Animations/AnimatorPlayer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/AnimatorPlayer.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Characters/Player/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Player/Script/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArrowBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArrowBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArrowTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArrowTower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HomingTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HomingTower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +148,9 @@
       <workItem from="1717993947531" duration="2271000" />
       <workItem from="1718056154623" duration="2634000" />
       <workItem from="1718281700209" duration="21303000" />
-      <workItem from="1718407435663" duration="9060000" />
+      <workItem from="1718407435663" duration="11213000" />
+      <workItem from="1718425858223" duration="214000" />
+      <workItem from="1718426469323" duration="2864000" />
     </task>
     <servers />
   </component>

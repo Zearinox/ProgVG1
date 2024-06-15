@@ -15,6 +15,7 @@ public class ArrowTower : MonoBehaviour
     public AudioClip fireSound; // Sonido al disparar
     public float maxDistance = 20f; // Distancia máxima para escuchar el sonido completamente
     public float fireVolume = 1f; // Volumen del sonido de disparo
+    private PlayerController playerController;
 
     private Transform target; // Referencia al objetivo (personaje)
     private float fireCountdown;
@@ -24,6 +25,11 @@ public class ArrowTower : MonoBehaviour
         // Encuentra al jugador por etiqueta
         target = GameObject.FindGameObjectWithTag("Player").transform;
         SetRandomFireCountdown();
+        GameObject player = GameObject.FindGameObjectWithTag("Player"); //PARA QUE DEJE DE PEGAR
+        if (player != null)
+        {
+            playerController = player.GetComponent<PlayerController>();
+        }
     }
 
     void Update()
@@ -45,9 +51,11 @@ public class ArrowTower : MonoBehaviour
 
             // Disparar flechas a intervalos aleatorios
             if (fireCountdown <= 0f)
-            {
+            {if (playerController.currentHealth >= 0)
+                {
                 Shoot();
                 SetRandomFireCountdown();
+                }
             }
 
             fireCountdown -= Time.deltaTime;
