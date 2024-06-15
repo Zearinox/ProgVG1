@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076733656564457006}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4053091054853880894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8713656176360376534}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Crystaol_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 2669229168141477025}
   - component: {fileID: 1495440755205147829}
   - component: {fileID: 5888419645156624865}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wizard_tower_LVL_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5888419646351549583}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MiraHomingMisil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1104827976799499366}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: W_tower_3_rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6214236333471463905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TorreMagicaViolenta Final
   m_TagString: Torres
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7632185236854155444}
   - component: {fileID: 5888419644827527108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Crystal_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

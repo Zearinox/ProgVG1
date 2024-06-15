@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3c4de33-85d5-4d5a-bdd5-26bb1aeb5476" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Boss.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Boss.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Player.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Characters/Player/Player.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgVG1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Characters/Boss/BossAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Boss/BossAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Characters/Boss/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Boss/EnemyAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Boss/Warrok W Kurniawan.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Characters/Player/Animations/AnimatorPlayer.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/AnimatorPlayer.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Characters/Player/Script/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Player/Script/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Nivel1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArrowTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArrowTower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CannonTower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HomingTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HomingTower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Die.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Player/Animations/Die.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna Final.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreCannonMaligna Final.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreFlechadora.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreFlechadora.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TorreMagicaViolenta Final.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TorreMagicaViolenta Final.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +148,7 @@
       <workItem from="1718281700209" duration="21303000" />
       <workItem from="1718407435663" duration="11213000" />
       <workItem from="1718425858223" duration="214000" />
-      <workItem from="1718426469323" duration="2864000" />
+      <workItem from="1718426469323" duration="3974000" />
     </task>
     <servers />
   </component>
