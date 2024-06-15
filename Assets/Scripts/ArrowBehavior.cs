@@ -46,6 +46,18 @@ public class ArrowBehavior : MonoBehaviour
                 playerController.TakeDamage(damage); // Hacer daño directo al jugador
             }
         }
+        else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            // Reproducir el sonido de impacto contra el enemigo (puede ser el mismo que el del jugador)
+            PlayImpactSound(impactPlayerSound);
+
+            // Infligir daño al enemigo
+            EnemyAI enemyAI = collision.gameObject.GetComponent<EnemyAI>();
+            if (enemyAI != null)
+            {
+                enemyAI.TakeDamage(damage); // Hacer daño directo al enemigo
+            }
+        }
         else
         {
             // Reproducir el sonido de impacto contra el terreno u otros objetos sólidos

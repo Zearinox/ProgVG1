@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 4747787704460520816}
   m_Layer: 0
   m_Name: TorreFlechadora
-  m_TagString: Untagged
+  m_TagString: Torres
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

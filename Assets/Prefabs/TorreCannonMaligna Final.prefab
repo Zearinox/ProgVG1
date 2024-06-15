@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 4916299162929346198}
   m_Layer: 0
   m_Name: TorreCannonMaligna Final
-  m_TagString: Untagged
+  m_TagString: Torres
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
