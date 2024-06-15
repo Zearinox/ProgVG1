@@ -15,13 +15,21 @@ public class CannonTower : MonoBehaviour
     public AudioClip fireSound; // Sonido al disparar
     public float maxDistance = 20f; // Distancia máxima para escuchar el sonido completamente
     public float fireVolume = 1f; // Volumen del sonido de disparo
+    private PlayerController playerController;
 
     private Transform target; // Referencia al objetivo (personaje)
     private float fireCountdown;
+    
+
 
     void Start()
     {
         // Encuentra al jugador por etiqueta
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerController = player.GetComponent<PlayerController>();
+        }
         target = GameObject.FindGameObjectWithTag("Player").transform;
         SetRandomFireCountdown();
     }
@@ -46,8 +54,11 @@ public class CannonTower : MonoBehaviour
             // Disparar proyectiles a intervalos aleatorios
             if (fireCountdown <= 0f)
             {
+                if (playerController.currentHealth >= 0)
+                {
                 Shoot(direction);
                 SetRandomFireCountdown();
+                }
             }
 
             fireCountdown -= Time.deltaTime;

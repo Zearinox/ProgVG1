@@ -25,12 +25,18 @@ public class EnemyAI : MonoBehaviour
     private bool isDead = false; // Variable para verificar si el enemigo ya está muerto
     private bool isInvulnerable = false; // Variable para indicar si es invulnerable
     private List<Renderer> renderers = new List<Renderer>();
+    private PlayerController playerController;
 
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         currentHealth = maxHealth;
         renderers.AddRange(GetComponentsInChildren<Renderer>());
+        GameObject player = GameObject.FindGameObjectWithTag("Player"); //PARA QUE DEJE DE PEGAR
+        if (player != null)
+        {
+            playerController = player.GetComponent<PlayerController>();
+        }
     }
 
     void Update()
@@ -43,29 +49,38 @@ public class EnemyAI : MonoBehaviour
         if (isDead) return; // Si el enemigo está muerto, no ejecutar el resto del código
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
-        if (distanceToPlayer <= detectionRadius)
+        if (playerController.currentHealth >= 0)
         {
-            playerDetected = true;
-            navMeshAgent.SetDestination(player.position); // Usar NavMesh para seguir al jugador
-            animator.SetBool("isWalking", true); // Activar animación de caminar
+            if (distanceToPlayer <= detectionRadius)
+            {
+                playerDetected = true;
+                navMeshAgent.SetDestination(player.position); // Usar NavMesh para seguir al jugador
+                animator.SetBool("isWalking", true); // Activar animación de caminar
+            }
+            else
+            {
+                playerDetected = false;
+                navMeshAgent.SetDestination(transform.position); // Detener el movimiento del enemigo
+                animator.SetBool("isWalking", false); // Desactivar animación de caminar
+            }
+
+            if (playerDetected && distanceToPlayer <= meleeRange && Time.time > lastAttackTime + attackCooldown)
+            {
+                
+                    AttackPlayer();
+                
+            }
         }
         else
         {
-            playerDetected = false;
-            navMeshAgent.SetDestination(transform.position); // Detener el movimiento del enemigo
-            animator.SetBool("isWalking", false); // Desactivar animación de caminar
-        }
-
-        if (playerDetected && distanceToPlayer <= meleeRange && Time.time > lastAttackTime + attackCooldown)
-        {
-            AttackPlayer();
+            animator.SetBool("isWalking", false); 
         }
     }
 
     void AttackPlayer()
     {
         // Ejecutar animación de ataque
+        
         animator.Play("Attack");
 
         // Implementar lógica de daño aquí

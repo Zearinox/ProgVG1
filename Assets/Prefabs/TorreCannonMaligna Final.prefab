@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5434370703914355368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: C_tower_4_rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3615856502293021019}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4007843045120905777}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MiraBalaCannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4916299162929346198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TorreCannonMaligna Final
   m_TagString: Torres
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3800765511729619208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cannon_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6900027889436620270}
   - component: {fileID: 4877553939355958086}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cannon_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8740603397148015852}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 5023494586653504156}
   - component: {fileID: 1407864927848166356}
   - component: {fileID: 9182927859978174000}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cannon_tower_LVL_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
