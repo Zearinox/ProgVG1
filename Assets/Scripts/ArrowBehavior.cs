@@ -13,7 +13,7 @@ public class ArrowBehavior : MonoBehaviour
     public float maxDistance = 20f; // Distancia máxima para escuchar el sonido completamente
 
     private Vector3 targetPosition; // Posición del objetivo en el momento del disparo
-    private bool targetPositionSet = false;
+    
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class ArrowBehavior : MonoBehaviour
     public void SetTargetPosition(Vector3 position)
     {
         targetPosition = position;
-        targetPositionSet = true;
+        
         // Calcular la dirección inicial hacia el objetivo
         Vector3 direction = (targetPosition - transform.position).normalized;
         GetComponent<Rigidbody>().velocity = direction * speed;
@@ -44,6 +44,18 @@ public class ArrowBehavior : MonoBehaviour
             if (playerController != null)
             {
                 playerController.TakeDamage(damage); // Hacer daño directo al jugador
+            }
+        }
+        else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            // Reproducir el sonido de impacto contra el enemigo (puede ser el mismo que el del jugador)
+            PlayImpactSound(impactPlayerSound);
+
+            // Infligir daño al enemigo
+            EnemyAI enemyAI = collision.gameObject.GetComponent<EnemyAI>();
+            if (enemyAI != null)
+            {
+                enemyAI.TakeDamage(damage); // Hacer daño directo al enemigo
             }
         }
         else

@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 6214236333471463905}
   m_Layer: 0
   m_Name: TorreMagicaViolenta Final
-  m_TagString: Untagged
+  m_TagString: Torres
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,4 +349,4 @@ MonoBehaviour:
   rotationOffset: {x: 0, y: 0, z: 0}
   fireSound: {fileID: 8300000, guid: 735a49afcd8dfae4e81f3f59e2e8ccaf, type: 3}
   maxDistance: 45
-  fireVolume: 4
+  fireVolume: 1

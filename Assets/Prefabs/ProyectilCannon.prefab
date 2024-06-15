@@ -114,10 +114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd1f2fd5fede2a48a73fc309233e18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directDamage: 1
-  explosionDamage: 1
+  directDamage: 10
+  explosionDamage: 5
   burnDuration: 10
-  burnDamagePerSecond: 1
+  burnDamagePerSecond: 2
   explosionRadius: 5
   burnAreaPrefab: {fileID: 2569287741885065251, guid: 4be2b06766a5f9e429b42617926569b9, type: 3}
   explosionEffect: {fileID: 6436460721798696432, guid: 22488607ad903e44c9220e50e4ed44cc, type: 3}
@@ -126,7 +126,8 @@ MonoBehaviour:
   fireSound: {fileID: 8300000, guid: e452bb751d8dd8f40b5a9960ee2a6a01, type: 3}
   maxDistance: 20
   explosionVolume: 0.5
-  fireVolume: 0.5
+  fireVolume: 0.8
+  explosionDuration: 2
 --- !u!135 &-6248631778912433776
 SphereCollider:
   m_ObjectHideFlags: 0
