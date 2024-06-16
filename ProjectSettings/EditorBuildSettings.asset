@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 4ef4f5fd25750684d82d645b10cae901
   - enabled: 1
-    path: Assets/Scenes/Nivel 1 Dani.unity
+    path: Assets/Scenes/Nivel 1 JP.unity
     guid: f43b6afcc90c78346aefd48a6c886116
   - enabled: 1
-    path: Assets/Scenes/Nivel 2 Dani.unity
+    path: Assets/Scenes/Nivel 2 JP.unity
     guid: d55757af78dc36645a94c70d7ec4719a
   - enabled: 1
-    path: Assets/Scenes/Nivel 3 Dani.unity
+    path: Assets/Scenes/Nivel 3 JP.unity
     guid: 9b049615094a7cc48ba1a3b9c3b3b332
   - enabled: 1
     path: Assets/Scenes/VictoryScene.unity
