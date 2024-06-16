@@ -268,10 +268,10 @@ public class PlayerController : MonoBehaviour
         {
             scoreBar.UpdateScore(score);
         }
-        if (score >= pointsToWin)
+       /* if (score >= pointsToWin)
         {
             WinGame();
-        }
+        }*/
     }
     private void WinGame()
     {
