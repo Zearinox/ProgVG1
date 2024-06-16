@@ -7,6 +7,13 @@ public class ToLevel3 : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(3);
+        
+            PlayerController player = other.GetComponent<PlayerController>();
+            int score = player.score;
+            if (score >= 10)
+            {
+                SceneManager.LoadScene(3);
+            }
+        
     }
 }
