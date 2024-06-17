@@ -9,7 +9,8 @@ public class EnemyAI : MonoBehaviour
 {
     public Transform player; // Referencia al jugador
     public float detectionRadius = 10f; // Radio de detección
-    public float meleeRange = 2f; // Rango de ataque cuerpo a cuerpo
+    
+    [SerializeField] private float melee;
     public int maxHealth = 500; // Puntos de vida del enemigo
     public int currentHealth; // Vida actual del enemigo
     public int damage = 20; // Daño del ataque cuerpo a cuerpo
@@ -49,6 +50,7 @@ public class EnemyAI : MonoBehaviour
         if (isDead) return; // Si el enemigo está muerto, no ejecutar el resto del código
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        
         if (playerController.currentHealth >= 0)
         {
             if (distanceToPlayer <= detectionRadius)
@@ -56,6 +58,7 @@ public class EnemyAI : MonoBehaviour
                 playerDetected = true;
                 navMeshAgent.SetDestination(player.position); // Usar NavMesh para seguir al jugador
                 animator.SetBool("isWalking", true); // Activar animación de caminar
+                
             }
             else
             {
@@ -64,10 +67,10 @@ public class EnemyAI : MonoBehaviour
                 animator.SetBool("isWalking", false); // Desactivar animación de caminar
             }
 
-            if (playerDetected && distanceToPlayer <= meleeRange && Time.time > lastAttackTime + attackCooldown)
+            if (playerDetected && distanceToPlayer <= melee && Time.time > lastAttackTime + attackCooldown)
             {
                 
-                    AttackPlayer();
+                AttackPlayer();
                 
             }
         }
@@ -169,6 +172,6 @@ public class EnemyAI : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position, meleeRange);
+        Gizmos.DrawWireSphere(transform.position, melee);
     }
 }
