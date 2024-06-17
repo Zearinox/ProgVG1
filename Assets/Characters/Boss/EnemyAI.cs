@@ -10,7 +10,7 @@ public class EnemyAI : MonoBehaviour
     public Transform player; // Referencia al jugador
     public float detectionRadius = 10f; // Radio de detección
     public float meleeRange = 2f; // Rango de ataque cuerpo a cuerpo
-    public int maxHealth = 100; // Puntos de vida del enemigo
+    public int maxHealth = 500; // Puntos de vida del enemigo
     public int currentHealth; // Vida actual del enemigo
     public int damage = 20; // Daño del ataque cuerpo a cuerpo
     public float attackCooldown = 1.5f; // Tiempo de espera entre ataques
