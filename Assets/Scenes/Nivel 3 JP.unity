@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.03480368, g: 0.020808278, b: 0.03241173, a: 1}
+  m_IndirectSpecularColor: {r: 0.034804203, g: 0.0208043, b: 0.03240973, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2794,6 +2794,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7836899051722072095, guid: b5a5fc95758ed3842ac1f687226b4c0e, type: 3}
+      propertyPath: damage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836899051722072095, guid: b5a5fc95758ed3842ac1f687226b4c0e, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 847154475}
@@ -2803,7 +2807,7 @@ PrefabInstance:
       objectReference: {fileID: 935430332}
     - target: {fileID: 7836899051722072095, guid: b5a5fc95758ed3842ac1f687226b4c0e, type: 3}
       propertyPath: maxHealth
-      value: 100
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7836899051722072095, guid: b5a5fc95758ed3842ac1f687226b4c0e, type: 3}
       propertyPath: meleeRange
