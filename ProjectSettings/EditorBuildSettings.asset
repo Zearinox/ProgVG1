@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 4ef4f5fd25750684d82d645b10cae901
   - enabled: 1
+    path: Assets/Scenes/Nivel completado.unity
+    guid: acd556b0c66bce2478d2f420251ae828
+  - enabled: 1
+    path: Assets/Scenes/VictoryScene.unity
+    guid: 02cf4e7d70a0e43468b8ff57e813e9e5
+  - enabled: 1
     path: Assets/Scenes/Nivel 1 JP.unity
     guid: f43b6afcc90c78346aefd48a6c886116
   - enabled: 1
@@ -17,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel 3 JP.unity
     guid: 9b049615094a7cc48ba1a3b9c3b3b332
-  - enabled: 1
-    path: Assets/Scenes/VictoryScene.unity
-    guid: 02cf4e7d70a0e43468b8ff57e813e9e5
   - enabled: 1
     path: Assets/Scenes/Nivel1.unity
     guid: c2ceb117eb389ca429450cf30cc3021c

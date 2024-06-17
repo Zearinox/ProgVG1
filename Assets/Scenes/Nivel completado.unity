@@ -428,7 +428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3af343736e2b38241a3d96bea223bf23, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1ac55111cd0717f4bbaa4f9fde525598, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -661,7 +661,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 104}
+  m_AnchoredPosition: {x: 0, y: 75}
   m_SizeDelta: {x: 1086.1718, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1911974003
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3254902, g: 0.7058824, b: 0.4431373, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -694,10 +694,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Presiona \"Enter\" para comenzar \n\to \"Esc\" para salir"
+  m_Text: Presiona una tecla cualquiera
 --- !u!222 &1911974004
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -752,7 +752,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2034173610}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be4585cf33edbb242be7428e860a8136, type: 3}
+  m_Script: {fileID: 11500000, guid: f9b8b82d69fbd2c4c8ceafa1529530fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pressAnyKeyText: {fileID: 1911974003}

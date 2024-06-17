@@ -4,16 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainMenuController : MonoBehaviour
+public class NivelCompletado : MonoBehaviour
 {
     public Text pressAnyKeyText; // Referencia al texto de "Presiona cualquier tecla"
-    public float blinkDuration = 0.5f; // DuraciÃ³n del parpadeo en segundos
+    public float blinkDuration = 0.5f; // Duración del parpadeo en segundos
     private bool blinkState = true;
     public AudioClip pressKeySound;
     public float pressVolume = 1f;
+    private static int previousSceneIndex;
 
     void Start()
     {
+        // Obtener el índice de la escena anterior
+        previousSceneIndex = PlayerPrefs.GetInt("PreviousSceneIndex");
+
         if (pressAnyKeyText != null)
         {
             StartCoroutine(BlinkText());
@@ -26,13 +30,13 @@ public class MainMenuController : MonoBehaviour
 
     void Update()
     {
-        // Salir del juego al presionar "Esc"
-        if (Input.GetKeyDown(KeyCode.Escape))        
-            Application.Quit();        
+        // Detectar si cualquier tecla es presionada
+        if (Input.anyKeyDown)
+        {
+            pressStart();
+            // Cargar la escena del primer nivel (asegúrate de que el nombre de la escena sea correcto)
 
-        // Iniciar nvl 1 al presionar "Enter"
-        if (Input.anyKeyDown)        
-            pressStart();                   
+        }
     }
 
     private void pressStart()
@@ -45,7 +49,7 @@ public class MainMenuController : MonoBehaviour
             pressKeyAudioSource.loop = false;
             pressKeyAudioSource.volume = pressVolume;
             pressKeyAudioSource.Play();
-            Destroy(pressKeyAudioSource, pressKeySound.length);   
+            Destroy(pressKeyAudioSource, pressKeySound.length);
         }
         StartCoroutine(pressStartDelay(3f));
     }
@@ -59,10 +63,22 @@ public class MainMenuController : MonoBehaviour
             yield return new WaitForSeconds(blinkDuration);
         }
     }
-    
+
     IEnumerator pressStartDelay(float delay)
     {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene("Nivel 1 JP");
+        // Calcular el índice de la siguiente escena
+        int nextSceneIndex = previousSceneIndex + 1;
+
+        // Verificar si la siguiente escena existe en el Build Settings
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            yield return new WaitForSeconds(delay);
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.LogWarning("No hay más escenas disponibles para cargar.");
+            // Aquí puedes manejar qué sucede si no hay más escenas disponibles (por ejemplo, reiniciar el juego).
+        }
     }
 }
