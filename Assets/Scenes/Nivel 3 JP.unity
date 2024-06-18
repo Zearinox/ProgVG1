@@ -2326,7 +2326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cea3e7075ca2bfe4d9d0dcb1a3157198, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duracionEnPantalla: 15
+  duracionEnPantalla: 10
 --- !u!4 &847154475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1875020089461109224, guid: 3176afe7a870ea241b0c9310a531b5d5, type: 3}
@@ -2782,6 +2782,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7836899051722072090, guid: b5a5fc95758ed3842ac1f687226b4c0e, type: 3}
+      propertyPath: m_Speed
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836899051722072090, guid: b5a5fc95758ed3842ac1f687226b4c0e, type: 3}
       propertyPath: m_Radius
       value: 0.5
       objectReference: {fileID: 0}
@@ -2791,7 +2795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836899051722072095, guid: b5a5fc95758ed3842ac1f687226b4c0e, type: 3}
       propertyPath: melee
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7836899051722072095, guid: b5a5fc95758ed3842ac1f687226b4c0e, type: 3}
       propertyPath: damage
@@ -5380,9 +5384,9 @@ GameObject:
   - component: {fileID: 1549455582}
   - component: {fileID: 1549455581}
   - component: {fileID: 1549455580}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

@@ -120,6 +120,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        Debug.Log("llegue al metodo");
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         animator.Play("Jump");
     }

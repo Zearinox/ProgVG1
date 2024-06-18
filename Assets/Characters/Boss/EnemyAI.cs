@@ -11,9 +11,9 @@ public class EnemyAI : MonoBehaviour
     public float detectionRadius = 10f; // Radio de detección
     
     [SerializeField] private float melee;
-    public int maxHealth = 500; // Puntos de vida del enemigo
+    public int maxHealth = 300; // Puntos de vida del enemigo
     public int currentHealth; // Vida actual del enemigo
-    public int damage = 20; // Daño del ataque cuerpo a cuerpo
+    public int damage = 15; // Daño del ataque cuerpo a cuerpo
     public float attackCooldown = 1.5f; // Tiempo de espera entre ataques
     public Animator animator; // Referencia al componente Animator del enemigo
     public Vector3 rotationOffset; // Offset de rotación para ajustar la orientación
