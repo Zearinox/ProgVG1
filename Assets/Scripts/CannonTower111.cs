@@ -63,7 +63,7 @@ public class CannonTower111 : MonoBehaviour
         if (rb != null)
         {
             // Aplicar fuerza para disparar el proyectil
-            rb.velocity = direction * projectileSpeed;
+            rb.linearVelocity = direction * projectileSpeed;
         }
     }
 

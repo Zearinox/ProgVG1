@@ -27,7 +27,7 @@ public class ArrowBehavior : MonoBehaviour
         
         // Calcular la dirección inicial hacia el objetivo
         Vector3 direction = (targetPosition - transform.position).normalized;
-        GetComponent<Rigidbody>().velocity = direction * speed;
+        GetComponent<Rigidbody>().linearVelocity = direction * speed;
         transform.rotation = Quaternion.LookRotation(direction);
     }
 

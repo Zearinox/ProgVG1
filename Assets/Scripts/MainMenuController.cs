@@ -63,6 +63,6 @@ public class MainMenuController : MonoBehaviour
     IEnumerator pressStartDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene("Nivel 1 JP");
+        SceneManager.LoadScene("Selecction");
     }
 }

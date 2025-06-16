@@ -134,7 +134,7 @@ public class PlayerController : MonoBehaviour
 
     private void Evade()
     {
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
         StartCoroutine(TemporaryInvulnerability(animator.GetCurrentAnimatorStateInfo(0).length));
         animator.Play("Evade");
         rb.AddForce(-transform.forward * evadeForce, ForceMode.Impulse);

@@ -78,7 +78,7 @@ public class CannonTower : MonoBehaviour
         if (rb != null)
         {
             // Aplicar fuerza para disparar el proyectil
-            rb.velocity = direction * projectileSpeed;
+            rb.linearVelocity = direction * projectileSpeed;
         }
 
         // Reproducir el sonido de disparo con atenuación según la distancia

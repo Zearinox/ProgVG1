@@ -29,7 +29,7 @@ public class PushRigidBody : MonoBehaviour
             Vector3 pushDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
             if (pushDirection.magnitude > 0.1f)
             {
-                body.velocity = pushDirection * pushPower;
+                body.linearVelocity = pushDirection * pushPower;
                 StartPushAnimation(body);
             }
             else
